@@ -8,13 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.1
+      - uses: actions/checkout@v3.5.2
       - run: ./test/build/test_userbuild.sh
 
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.1
+      - uses: actions/checkout@v3.5.2
 
       - name: Build .htaccess
         run: ./bin/build.sh test/conf/.htaccess test/build/htaccess_fixture.conf
